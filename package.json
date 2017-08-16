@@ -63,6 +63,11 @@
   },
   "scripts": {
     "test": "grunt test",
-    "postinstall": "node test/upgrade-selenium.js && node_modules/protractor/bin/webdriver-manager update"
+    "postinstall": "node test/upgrade-selenium.js && node_modules/protractor/bin/webdriver-manager update; bower install",
+    "start": "grunt serve & open https://localhost:9000; open https://metrics-openshift-infra.127.0.0.1.nip.io/hawkular/metrics",
+    "admin": "oc cluster up --version=v3.6.0 --public-hostname=127.0.0.1 --routing-suffix=127.0.0.1 --service-catalog=true --use-existing-config --host-data-dir=/Users/alo/.cluster-data/; npm start; oc login -u system:admin; oc adm policy add-cluster-role-to-group system:openshift:templateservicebroker-client system:unauthenticated system:authenticated",
+    "update": "bower update",
+    "build": "grunt build",
+    "stop": "oc cluster down;"
   }
 }

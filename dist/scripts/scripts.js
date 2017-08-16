@@ -601,9 +601,9 @@ DISABLE_WILDCARD_ROUTES: !0,
 DISABLE_CONFIRM_ON_EXIT: !1,
 AVAILABLE_KINDS_BLACKLIST: [],
 ENABLE_TECH_PREVIEW_FEATURE: {
-service_catalog_landing_page: !1,
-template_service_broker: !1,
-pod_presets: !1
+service_catalog_landing_page: !0,
+template_service_broker: !0,
+pod_presets: !0
 },
 SAMPLE_PIPELINE_TEMPLATE: {
 name: "jenkins-pipeline-example",

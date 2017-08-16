@@ -11679,6 +11679,7 @@ angular.module('openshiftConsoleTemplates', []).run(['$templateCache', function(
     "</overview-list-row>\n" +
     "</div>\n" +
     "</div>\n" +
+    "<h2>HELLO WORLD!</h2>\n" +
     "\n" +
     "<div ng-if=\"overview.filteredServiceInstances.length && !overview.hidePipelineOtherResources\">\n" +
     "<h2>\n" +
